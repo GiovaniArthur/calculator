@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela round';
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: #F5F7FF;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    margin-top: 100px;
+    width: 350px;
+    padding: 30px 10px;  
+    background-color: #FEFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0px 5px 25px rgba(51, 79, 90, 0.158);
+}
+
+.display {
+    padding: 10px;
+    height: 50px;
+    width: 270px;
+    margin-bottom: 10px;
+    background-color: #2388FF;
+    align-self: center;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    outline: 0;
+    text-align: right;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+button {
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: #D8DDF0;
+    border: none;
+    border-radius: 50%;
+    box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #6E7691;
+}
+
+button:hover:not(.plus, .multiply, .division, .minun, .c, .equal) {
+    scale: 1.1;
+    box-shadow: inset 0px -3px 2px rgba(0, 0, 0, 0.144);
+}
+
+.plus:hover, .c:hover, .minun:hover, .multiply:hover, .division:hover, .equal:hover {
+    scale: 1.15;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.267);
+}
+
+.plus {
+    color: white;
+    background-color: #63DE77;
+    box-shadow: none;
+}
+
+.multiply {
+    color: white;
+    background-color: #FFC804;
+    box-shadow: none;
+}
+
+.division {
+    color: white;
+    background-color: #2388FF;
+    box-shadow: none;
+}
+
+.minun {
+    color: white;
+    background-color: #FF445A;
+    box-shadow: none;
+}
+
+.equal {
+    background-color: #F5F7FF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.103);
+}
+
+.c {
+    color: white;
+    background-color: #1F2B54;
+    box-shadow: 0px 2px 20px #1f2b548e;
+}
